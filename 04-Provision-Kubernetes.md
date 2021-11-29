@@ -86,4 +86,29 @@ In this exercise, configure a Rancher and provision a Kubernetes cluster (RKE2) 
 
           ![worker1](../main/Images/worker1.png)
           
-   - 
+   - Scroll down to the **Cluster Configuration** section, under the  **Basics** section, choose **Cloud Provider** as **Azure**. Under **Cloud Provider Config** paste the below given code.
+
+    
+   ```
+   {
+       "cloud": "AzurePublicCloud",
+       "tenantId": "my-tenant-id",
+       "aadClientId": "my-client-id",
+       "aadClientSecret": "my-secret",
+       "subscriptionId": "my-subscription-id",
+       "resourceGroup": "Rancher",
+       "location": "This should be same as the region of your AVD-RG resource group",
+       "subnetName": "rke2-worker-subnet",
+       "securityGroupName": "rke2-worker-nsg",
+       "securityGroupResourceGroup": "Rancher",
+       "vnetName": "mylab-vnet",
+       "vnetResourceGroup": "Rancher",
+       "primaryAvailabilitySetName": "rke2-worker-as",
+       "routeTableResourceGroup": "Rancher",
+       "cloudProviderBackOff": false,
+       "useManagedIdentityExtension": false,
+       "useInstanceMetadata": true
+   }
+   ```
+   
+   > Note: For details of this configuration, please refer to the [Azure Cloud Provider](https://kubernetes-sigs.github.io/cloud-provider-azure/install/configs/) documentation site.
