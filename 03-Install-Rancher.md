@@ -88,4 +88,14 @@ In this task, you will create a Linux Virtual machine using Bash Command.
 Command ran in 92.491 seconds (init: 0.115, invoke: 92.376)
 ```
 
+### Task 1.3: Open port 443 for web traffic
+
+1. By default, only SSH connections are opened when you create a Linux VM in Azure.  
+
+1. Copy and paste the below given Bash command to configure the created Linux VM open to the TCP port 443 (https protocol) for the later use with Rancher Server instance:
+
+```bash
+az vm open-port --port 443 --resource-group rancher --name rancher
+```
+
 
