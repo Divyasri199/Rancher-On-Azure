@@ -44,6 +44,6 @@ In this task, let's create a linux instance on Azure to run SUSE Rancher.
 
    ```bash
     az network vnet create --resource-group Rancher \
-  --name mylab-vnet --address-prefix 10.0.0.0/16 \
-  --subnet-name rancher-subnet --subnet-prefix 10.0.0.0/24
+     --name mylab-vnet --address-prefix 10.0.0.0/16 \
+     --subnet-name rancher-subnet --subnet-prefix 10.0.0.0/24
   ```
