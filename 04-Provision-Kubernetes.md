@@ -33,11 +33,11 @@ In this exercise, configure a Rancher and provision a Kubernetes cluster (RKE2) 
 
    > Note : You can find the above values in **my-azure.txt** flie from desktop
 
-    ![create azure](../main/Images/create%20azure.png)
+  ![create azure](../main/Images/create%20azure.png)
     
 1. You will now be shown a Create Cluster on Azure form. You are going to name the cluster, create 2 machine pools for it (one for master node pool and one for worker nodes pool), and configure Azure cloud provider for this cluster.
 
-   ![create azure1](/main/Images/create%20azure1.png)
+   ![create azure1](../main/Images/create%20azure1.png)
 
 1. On **Cluster : Create Azure** page, enter the below information:
 
