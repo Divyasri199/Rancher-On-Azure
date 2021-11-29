@@ -66,17 +66,24 @@ In this exercise, configure a Rancher and provision a Kubernetes cluster (RKE2) 
 
       ![add cluster](../main/Images/add%20cluster.png)
       
-   - Pool Name: **worker**
-     - Machine Count: **1**
-     - Roles: **Worker**
-     - Location: **SouthEastAsia**
-     - Resource Group: **Rancher**
-     - Availability Set: **rke2-worker-as**
-     - Image: **SUSE:opensuse-leap-15-3:gen1:2021.10.12**
-     - VM Size: **Standard_A4_v2**
-     - (Show Advanced)
-       - Subnet: **rke2-worker-subnet**
-       - Subnet Prefix: **10.0.2.0/24**
-       - Virtual Network: **mylab-vnet**
-       - Public IP Options: **No Public IP**
-       - Network Security Group: **rke2-worker-nsg**
+   - Pool Name: **worker (1)**
+     - Machine Count: **1 (2)**
+     - Roles: **Worker (3)**
+     - Location: **This should be same as the region of your Rancher resource group (4)**
+     - Resource Group: **Rancher (5)**
+     - Availability Set: **rke2-worker-as (6)**
+     - Image: **SUSE:opensuse-leap-15-3:gen1:2021.10.12 (7)**
+     - VM Size: **Standard_A4_v2 (8)**
+     - Click on **Show Advanced (9)**
+
+         ![worker](../main/Images/worker.png)
+         
+       - Subnet: **rke2-worker-subnet (1)**
+       - Subnet Prefix: **10.0.2.0/24 (2)**
+       - Virtual Network: **mylab-vnet (3)**
+       - Public IP Options: **No Public IP (4)**
+       - Network Security Group: **rke2-worker-nsg (5)**
+
+          ![worker1](../main/Images/worker1.png)
+          
+   - 
