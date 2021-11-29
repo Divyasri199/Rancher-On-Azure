@@ -69,5 +69,23 @@ In this task, you will create a Linux Virtual machine using Bash Command.
      --os-disk-size-gb 50 \
      --verbose 
    ```
+1. It takes a 2-3 minutes to create this VM and supporting resources. 
+ 
+1. The following example output shows the VM create operation was successful.
+
+```
+{
+  "fqdns": "",
+  "id": "/subscriptions/25283eec-b18f-4965-936c-7493761298c5/resourceGroups/Rancher/providers/Microsoft.Compute/virtualMachines/rancher",
+  "location": "southeastasia",
+  "macAddress": "00-0D-3A-A0-DA-67",
+  "powerState": "VM running",
+  "privateIpAddress": "10.0.0.4",
+  "publicIpAddress": "20.212.112.32",
+  "resourceGroup": "Rancher",
+  "zones": ""
+}
+Command ran in 92.491 seconds (init: 0.115, invoke: 92.376)
+```
 
 
