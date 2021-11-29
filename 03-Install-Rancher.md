@@ -139,3 +139,13 @@ Copy and paste the below given bash command to install the software required to 
 ```bash
 sudo zypper install -y git jq
 ```
+It will take 2-3 min to install the software.
+
+### Download Rancher installation script
+
+Copy and paste the below given bash command to download  the Rancher installation script.
+
+```bash
+git clone https://github.com/dsohk/rancher-on-azure-workshop/
+cd rancher-on-azure-workshop/scripts
+```
