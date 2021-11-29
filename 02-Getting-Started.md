@@ -58,7 +58,7 @@ In this exercise, you will log in to the Azure Portal and review the pre-deploye
 
 1. Now you can see Azure Portal Dashboard, click on **Resource groups** from the Navigate panel to see the resource groups.
 
-   ![](https://github.com/CloudLabsAI-Azure/AIW-Azure-Network-Solutions/blob/main/media/resourcegroups.png?raw=true)
+   ![](../main/Images/resource-groups.png)
 
 1. Now, click on **Next** from the lower right corner to move to the next page.
 
