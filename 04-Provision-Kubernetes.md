@@ -41,17 +41,20 @@ In this exercise, configure a Rancher and provision a Kubernetes cluster (RKE2) 
 
 1. On **Cluster : Create Azure** page, enter the below information:
 
-  - Cluster name: **rke2**
+  - Cluster name: **rke2 (1)**
   - Setup 2 Machine Pools
-   - Pool Name: **master**
-     - Machine Count: **1**
-     - Roles: **etcd, Control Plane**
-     - Location: **SouthEastAsia**
-     - Resource Group: **Rancher**
-     - Availability Set: **rke2-master-as**
-     - Image: **SUSE:opensuse-leap-15-3:gen1:2021.10.12**
-     - VM Size: **Standard_A4_v2**
-     - (Show Advanced)
+   - Pool Name: **master (2)**
+     - Machine Count: **1** **(3)**
+     - Roles: **etcd, Control Plane (4)**
+     - Location: **This should be same as the region of your Rancher resource group (5)**
+     - Resource Group: **Rancher (6)**
+     - Availability Set: **rke2-master-as (7)**
+     - Image: **SUSE:opensuse-leap-15-3:gen1:2021.10.12 (8)**
+     - VM Size: **Standard_A4_v2 (9)**
+     - Click on **Show Advanced (10)**
+
+       ![master cluster](../main/Images/master%20cluster.png)
+       
        - Subnet: **rke2-master-subnet**
        - Subnet Prefix: **10.0.1.0/24**
        - Virtual Network: **mylab-vnet**
