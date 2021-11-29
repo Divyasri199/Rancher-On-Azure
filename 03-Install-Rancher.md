@@ -1,4 +1,4 @@
-# Exercise 1: Install SUSE Rancher on Microsoft Azure Instance
+# Exercise 2: Install SUSE Rancher on Microsoft Azure Instance
 
 Duration: 30 minutes
 
