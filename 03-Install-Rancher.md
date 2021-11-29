@@ -42,8 +42,8 @@ In this task, let's create a linux instance on Azure to run SUSE Rancher.
 
 1. Copy and paste the below Bash command to create a virtual network named **mylab-vnet** with the a subnet to host Rancher VM instance in this workshop.
 
-```bash
-az network vnet create --resource-group Rancher \
+   ```bash
+    az network vnet create --resource-group Rancher \
   --name mylab-vnet --address-prefix 10.0.0.0/16 \
   --subnet-name rancher-subnet --subnet-prefix 10.0.0.0/24
-```
+  ```
