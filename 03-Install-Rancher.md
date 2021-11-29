@@ -98,4 +98,11 @@ Command ran in 92.491 seconds (init: 0.115, invoke: 92.376)
 az vm open-port --port 443 --resource-group rancher --name rancher
 ```
 
+### Task 1.4: Connect to virtual machine
 
+1. SSH to your VM as usual. Use the public IP address of your VM as noted in the previous output in your ssh command. Alternatively, use the script below to obtain the VM IP address and ssh into it.
+
+```bash
+export RANCHER_IP=$(az vm show -d -g Rancher -n rancher --query publicIps -o tsv)
+ssh -o StrictHostKeyChecking=no suse@$RANCHER_IP
+```
