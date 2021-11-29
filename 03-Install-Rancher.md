@@ -106,3 +106,23 @@ az vm open-port --port 443 --resource-group rancher --name rancher
 export RANCHER_IP=$(az vm show -d -g Rancher -n rancher --query publicIps -o tsv)
 ssh -o StrictHostKeyChecking=no suse@$RANCHER_IP
 ```
+
+2. A new command prompt `suse@rancher:~>` should be shown as example below, indicating you have connected to the virtual machine successfully.
+
+```
+openSUSE Leap 15.3 x86_64 (64-bit)
+
+If you are using extensions consider to enable the auto-update feature
+of the extension agent and restarting the service. As root execute:
+
+  - sed -i s/AutoUpdate.Enabled=n/AutoUpdate.Enabled=y/ /etc/waagent.conf
+  - rcwaagent restart
+
+As "root" use the:
+
+- zypper command for package management
+- yast command for configuration management
+
+Have a lot of fun...
+suse@rancher:~>
+```
