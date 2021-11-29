@@ -149,3 +149,25 @@ Copy and paste the below given bash command to download  the Rancher installatio
 git clone https://github.com/dsohk/rancher-on-azure-workshop/
 cd rancher-on-azure-workshop/scripts
 ```
+
+### Install Rancher Server
+
+1. Copy and paste the below given bash command to install the **Rancher Server**
+
+
+```bash
+./install-rancher.sh
+```
+
+1. This script will **Install Kubernetes tools (kubectl and helm)** ,**Deploy Rancher and Install on RKE2 cluster**.
+
+In about 5-10 minutes, your Rancher Server should be ready. If you see the example output shown below, this means you have successfully deployed Rancher Server on the virtual machine. Note down the Rancher URL and initial bootstrap password.
+
+```
+---------------------------------------------------------
+Your Rancher Server is ready.
+
+Your Rancher Server URL: https://rancher.52.187.36.166.sslip.io
+Bootstrap Password: xk5rxg9grjrf9522752t4rqd84b46krhg86mwgvtvbzsdw49bjlzmb
+---------------------------------------------------------
+```
