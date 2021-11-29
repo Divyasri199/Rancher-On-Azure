@@ -2,7 +2,15 @@
 
 Duration: 30 minutes
 
-At this point, we are going to setup an instance of SUSE Rancher Server on Azure.
+## Overview
+
+An Azure Virtual Network (VNet) is a network or environment that can be used to run VMs and applications in the cloud. When it is created, the services and Virtual Machines within the Azure network interact securely with each other, the internet, and on-premises networks. You can find more references about the virtual network from here: ```https://docs.microsoft.com/en-us/azure/virtual-network/```
+
+A subnet is a range of IP addresses in the virtual network. You can divide a virtual network into multiple subnets for organization and security.
+
+Rancher is an open source software platform that enables organizations to run and manage Docker and Kubernetes in production. With Rancher, organizations no longer have to build a container services platform from scratch using a distinct set of open source technologies. Rancher supplies the entire software stack needed to manage containers in production. You can find more references about the Rancher server from here: ```https://rancher.com/docs/rancher/v1.2/en/```
+
+In this exercise, you will create a Virtual Network with a subnet, Linux Virtual Machine with an image reference of SUSE:opensuse-leap-15-3:gen1:2021.10.12 and also you will install a Rancher Server on Linux VM.
 
 ## Task 1: Create a Linux Instance on Azure
 
@@ -161,7 +169,7 @@ cd rancher-on-azure-workshop/scripts
 
 1. This script will **Install Kubernetes tools (kubectl and helm)** ,**Deploy Rancher and Install on RKE2 cluster**.
 
-In about 5-10 minutes, your Rancher Server should be ready. If you see the example output shown below, this means you have successfully deployed Rancher Server on the virtual machine. Note down the Rancher URL and initial bootstrap password.
+1. In about 5-10 minutes, your Rancher Server should be ready. If you see the example output shown below, this means you have successfully deployed Rancher Server on the virtual machine. Note down the Rancher URL and initial bootstrap password.
 
 ```
 ---------------------------------------------------------
