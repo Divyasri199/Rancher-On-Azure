@@ -62,7 +62,7 @@ In this exercise, configure a Rancher and provision a Kubernetes cluster (RKE2) 
        - Network Security Group: **rke2-master-nsg**
 
        ![show advance](../main/Images/show%20advance.png)
-   - Now click on ** + ** to add one more machine pool.
+   - Now click on **+** to add one more machine pool.
 
       ![add cluster](../main/Images/add%20cluster.png)
       
