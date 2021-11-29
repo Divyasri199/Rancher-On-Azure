@@ -112,3 +112,21 @@ In this exercise, configure a Rancher and provision a Kubernetes cluster (RKE2) 
    ```
    
    > Note: For details of this configuration, please refer to the [Azure Cloud Provider](https://kubernetes-sigs.github.io/cloud-provider-azure/install/configs/) documentation site.
+
+   ![cluster config](../main/Images/cluster%20config.png)
+   
+   - Under **Advanced** section, click on **Add** under **Additional Controller Manager Args** and paste the below command
+
+       ```
+         --configure-cloud-routes=false
+       ```
+       
+      ![config](../main/Images/config.png)
+      
+      
+   - Click **Create** button to start provisioning.
+
+
+1. In about 15-20 mins, the RKE2 cluster will then be provisioned and setup. If you click on the cluster name `rke` in the cluster list, you will see 2 VMs are being provisioned by Rancher for building up this cluster.
+ 
+    1[cluster provision](../main/Images/cluster%20provision.png)
