@@ -10,7 +10,9 @@ In this task, let's create a linux instance on Azure to run SUSE Rancher.
 
 
 
-### Create a virtual network
+### Task 1.1: Create a virtual network
+
+In this task, you will create a virtual network with a subnet using Bash commands from Cloud Shell.
 
 1. In the **Azure portal**, open the **Azure Cloud Shell** by clicking on the cloud shell icon in the top menu bar. Alternatively, you can open cloud shell by navigating to `https://shell.azure.com`.
 
@@ -46,4 +48,26 @@ In this task, let's create a linux instance on Azure to run SUSE Rancher.
     az network vnet create --resource-group Rancher \
      --name mylab-vnet --address-prefix 10.0.0.0/16 \
      --subnet-name rancher-subnet --subnet-prefix 10.0.0.0/24
-  ```
+   ```
+   
+### Task 1.2: Create a Linux virtual machine using OpenSUSE Leap 15.3
+
+In this task, you will create a Linux Virtual machine using Bash Command.
+
+1. Copy and paste the below given Bash command to create an OpenSUSE Leap 15.3 Linux virtual machine instance attached to the rancher-subnet network.
+
+   ```bash
+   az vm create --resource-group Rancher \
+     --name rancher \
+     --admin-username suse \
+     --image SUSE:opensuse-leap-15-3:gen1:2021.10.12 \
+     --size Standard_B4ms \
+     --generate-ssh-keys \
+     --public-ip-sku Basic \
+     --vnet-name mylab-vnet \
+     --subnet rancher-subnet \
+     --os-disk-size-gb 50 \
+     --verbose 
+   ```
+
+
