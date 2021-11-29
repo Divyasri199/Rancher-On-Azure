@@ -136,4 +136,8 @@ In this exercise, configure a Rancher and provision a Kubernetes cluster (RKE2) 
 
 While the RKE2 starts provisioning, Rancher spins up pods under `fleet-default` namespace in the cluster, named  `local` where Rancher Server is running,to provision VMs in Azure for RKE2. We can view the logs in these pods via Rancher web interface to inspect the Azure API calls from Rancher. 
 
-1. Once the machines have completed provisioning, Rancher will automatically provision RKE2 onto the VM. At this point, you can then ssh into the master and worker node within Rancher to inspect what's going on. All these are done by the `rancher-system-agent`
+1. Once the machines have completed provisioning, Rancher will automatically provision RKE2 onto the VM. You can confirm it from the count of machines on the **Clusters** page.
+
+      ![cluster1](../main/Images/cluster1.png)
+ 
+3. At this point, you can then ssh into the master and worker node within Rancher to inspect what's going on. All these are done by the `rancher-system-agent`
