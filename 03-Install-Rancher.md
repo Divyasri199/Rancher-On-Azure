@@ -162,11 +162,9 @@ cd rancher-on-azure-workshop/scripts
 
 1. Copy and paste the below given bash command to install the **Rancher Server**
 
-
 ```bash
 ./install-rancher.sh
 ```
-
 1. This script will **Install Kubernetes tools (kubectl and helm)** ,**Deploy Rancher and Install on RKE2 cluster**.
 
 1. In about 5-10 minutes, your Rancher Server should be ready. If you see the example output shown below, this means you have successfully deployed Rancher Server on the virtual machine. Note down the Rancher URL and initial bootstrap password.
