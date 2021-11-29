@@ -43,7 +43,7 @@ In this exercise, configure a Rancher and provision a Kubernetes cluster (RKE2) 
 
   - Cluster name: **rke2 (1)**
   - Setup 2 Machine Pools
-   - Pool Name: **master (2)**
+  - Pool Name: **master (2)**
      - Machine Count: **1** **(3)**
      - Roles: **etcd, Control Plane (4)**
      - Location: **This should be same as the region of your Rancher resource group (5)**
@@ -60,6 +60,12 @@ In this exercise, configure a Rancher and provision a Kubernetes cluster (RKE2) 
        - Virtual Network: **mylab-vnet**
        - Public IP Options: **No Public IP**
        - Network Security Group: **rke2-master-nsg**
+
+       ![show advance](../main/Images/show%20advance.png)
+   - Now click on ** + ** to add one more machine pool.
+
+      ![add cluster](../main/Images/add%20cluster.png)
+      
    - Pool Name: **worker**
      - Machine Count: **1**
      - Roles: **Worker**
