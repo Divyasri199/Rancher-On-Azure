@@ -177,3 +177,41 @@ Your Rancher Server URL: https://rancher.52.187.36.166.sslip.io
 Bootstrap Password: xk5rxg9grjrf9522752t4rqd84b46krhg86mwgvtvbzsdw49bjlzmb
 ---------------------------------------------------------
 ```
+1. Open a browser and navigate to the Rancher Server URL.
+
+1. If you get a Privacy error exception, click on **Advanced**
+
+   ![advanced](../main/Images/advanced.png)
+   
+1. Now click on the **Unsafe** URL.
+
+   ![unsafe](../main/Images/unsafe.png)
+   
+1. On the **Welcome to Rancher** page enter your **Bootstrap password (1)** and click on **Login with Local User (2)**.
+
+    ![login](../main/Images/login.png)
+    
+1. To reset the password, follow the below instructions:
+
+    - Click on **Set a specific password to use (1)**
+
+    - New Password : Enter **Password.1!! (2)**
+
+    - Confirm New Password : Enter **Password.1!! (3)**
+
+    - Check the box next to **I agree to the terms and conditions for using Rancher (4)**
+
+    - Click on **Continue (5)**
+
+       ![reset](../main/Images/reset%20password.png)
+       
+1. You can then land on the **Home** page of Rancher Server.
+
+    ![rancher home](../main/Images/rancher%20home.png)
+    
+    
+### Next steps
+
+In this exercise, you deployed Rancher Server instance. In the next exercise, you will configure Rancher Server to create a few VMs on Azure and automate provisioning of a Kubernetes cluster, which integrates with Azure Load Balancer, on these VMs.
+
+   
