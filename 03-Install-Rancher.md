@@ -126,3 +126,16 @@ As "root" use the:
 Have a lot of fun...
 suse@rancher:~>
 ```
+
+
+## Task 2: Install Rancher Server on Azure VM
+
+In this task, you are going to run the scripts provided in the `rancher` virtual machine terminal. SSH into this VM as instructed in Task 1 if you have not done yet.
+
+### Install software required for running script
+
+Copy and paste the below given bash command to install the software required to execute the Rancher installation script.
+
+```bash
+sudo zypper install -y git jq
+```
