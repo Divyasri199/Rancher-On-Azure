@@ -12,4 +12,6 @@ In this task, let's create a linux instance on Azure to run SUSE Rancher.
 
 ### Create a virtual network
 
-In the **Azure portal**, open the **Azure Cloud Shell** by clicking on the cloud shell icon in the top menu bar. Alternatively, you can open cloud shell by navigating to `https://shell.azure.com`.
+1. In the **Azure portal**, open the **Azure Cloud Shell** by clicking on the cloud shell icon in the top menu bar. Alternatively, you can open cloud shell by navigating to `https://shell.azure.com`.
+
+    ![cloudshell](../main/Images/cloudshell.png)
