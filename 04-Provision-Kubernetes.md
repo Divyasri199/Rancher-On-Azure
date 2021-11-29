@@ -41,9 +41,9 @@ In this exercise, configure a Rancher and provision a Kubernetes cluster (RKE2) 
 
 1. On **Cluster : Create Azure** page, enter the below information:
 
-  - Cluster name: **rke2 (1)**
-  - Setup 2 Machine Pools
-  - Pool Name: **master (2)**
+    - Cluster name: **rke2 (1)**
+    - Setup 2 Machine Pools
+    - Pool Name: **master (2)**
      - Machine Count: **1** **(3)**
      - Roles: **etcd, Control Plane (4)**
      - Location: **This should be same as the region of your Rancher resource group (5)**
@@ -62,11 +62,11 @@ In this exercise, configure a Rancher and provision a Kubernetes cluster (RKE2) 
        - Network Security Group: **rke2-master-nsg**
 
        ![show advance](../main/Images/show%20advance.png)
-   - Now click on **+** to add one more machine pool.
+    - Now click on **+** to add one more machine pool.
 
       ![add cluster](../main/Images/add%20cluster.png)
       
-   - Pool Name: **worker (1)**
+    - Pool Name: **worker (1)**
      - Machine Count: **1 (2)**
      - Roles: **Worker (3)**
      - Location: **This should be same as the region of your Rancher resource group (4)**
@@ -129,4 +129,4 @@ In this exercise, configure a Rancher and provision a Kubernetes cluster (RKE2) 
 
 1. In about 15-20 mins, the RKE2 cluster will then be provisioned and setup. If you click on the cluster name `rke` in the cluster list, you will see 2 VMs are being provisioned by Rancher for building up this cluster.
  
-    1[cluster provision](../main/Images/cluster%20provision.png)
+    ![cluster provision](../main/Images/cluster%20provision.png)
