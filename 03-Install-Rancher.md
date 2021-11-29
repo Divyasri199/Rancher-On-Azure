@@ -18,10 +18,26 @@ In this task, let's create a linux instance on Azure to run SUSE Rancher.
     
 1. After launching the Azure Cloud Shell, select the **Bash** option.
 
-    ![bash](..main/Images/bash.png)
+     ![bash](../main/Images/bash.png)
     
 1. Now on **You have no storage mounted** dialog box click on **Show advanced settings**.
 
     ![advance-settings](/Images/advance-settings.png)
     
-1. 
+1. Enter the below given information to attach the storageaccount:
+
+    - Subscription : Select your **Subscription (1)**.
+
+    - Cloud Shell region : This should be same as the region of your Rancher resource group **(2)**.
+
+    - Resource group : Click on **Use existing (3)** and select **Rancher (4)**.
+
+    - Storage account : Click on **Use existing (5)** and select **storage<inject key="DID" enableCopy="false"/> (6)**.
+
+    - File share : Click on **Use existing (7)** and enter **blob (8)**.
+
+    - Click on **Attach storage (9)**.
+
+      ![attach storage](../main/Images/attach%20storage.png)
+
+
