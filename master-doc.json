@@ -4,19 +4,27 @@
     "Language": "English",
     "Files": [
       {
-        "RawFilePath": "https://raw.githubusercontent.com/dsohk/rancher-on-azure-workshop/main/docs/01-Install-Rancher.md",
+        "RawFilePath": "https://raw.githubusercontent.com/CloudLabsAI-Azure/rancher-on-azure-workshop/main/docs/1.%20Getting-Started.md",
         "Order": 1
+      },
+      {
+        "RawFilePath": "https://raw.githubusercontent.com/CloudLabsAI-Azure/rancher-on-azure-workshop/main/docs/00-BeforeStartLab.md",
+        "Order": 2
+      },
+      {
+        "RawFilePath": "https://raw.githubusercontent.com/CloudLabsAI-Azure/rancher-on-azure-workshop/main/docs/01-Install-Rancher.md",
+        "Order": 2
       },
       {
         "RawFilePath": "https://raw.githubusercontent.com/dsohk/rancher-on-azure-workshop/main/docs/02-Provision-Kubernetes.md",
         "Order": 2
       },
       {
-        "RawFilePath": "https://raw.githubusercontent.com/dsohk/rancher-on-azure-workshop/main/docs/04-SecureAndManage-RKE.md",
+        "RawFilePath": "https://raw.githubusercontent.com/CloudLabsAI-Azure/rancher-on-azure-workshop/main/docs/03-DeployApps-on-RKE.md",
         "Order": 3
       },
       {
-        "RawFilePath": "https://raw.githubusercontent.com/dsohk/rancher-on-azure-workshop/main/docs/03-DeployApps-on-RKE.md",
+        "RawFilePath": "https://raw.githubusercontent.com/CloudLabsAI-Azure/rancher-on-azure-workshop/main/docs/04-SecureAndManage-RKE.md",
         "Order": 4
       },
       {
